@@ -1,7 +1,8 @@
 package ru.netology.radiomvn.service;
 
 public class Radio {
-    public int currentNumberRadioStation;
+    private int currentNumberRadioStation;
+    private int currentVolume;
 
     public int getCurrentNumberRadioStation() {
         return currentNumberRadioStation;
@@ -21,14 +22,14 @@ public class Radio {
         }
         if (newCurrentNumberRadioStation > 9) {
             newCurrentNumberRadioStation = 0;
-            // return;
+             return;
         }
 
         currentNumberRadioStation = newCurrentNumberRadioStation;
     }
 
 
-    public int currentVolume;
+
 
     public int getCurrentVolume() {
         return currentVolume;

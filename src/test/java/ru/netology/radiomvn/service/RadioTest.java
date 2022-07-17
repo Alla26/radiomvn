@@ -168,9 +168,9 @@ public class RadioTest {
     public void shouldNotSetNumberRadioStationAboveMax() {
         Radio numbStation = new Radio();
 
-        //numbStation.setCurrentNumberRadioStation(10);
-        numbStation.currentNumberRadioStation = 10;
-        numbStation.nextNumberRadioStation();
+        numbStation.setCurrentNumberRadioStation(10);
+        //numbStation.currentNumberRadioStation = 10;
+       // numbStation.nextNumberRadioStation();
 
         int expected = 0;
         int actual = numbStation.getCurrentNumberRadioStation();
@@ -183,9 +183,9 @@ public class RadioTest {
     public void shouldNotSetNumberRadioStationAboveMin() {
         Radio numbStation = new Radio();
 
-        //numbStation.setCurrentNumberRadioStation(-1);
-        numbStation.currentNumberRadioStation = -1;
-        numbStation.prevNumberRadioStation();
+        numbStation.setCurrentNumberRadioStation(-1);
+        //numbStation.currentNumberRadioStation = -1;
+       // numbStation.prevNumberRadioStation();
 
         int expected = 9;
         int actual = numbStation.getCurrentNumberRadioStation();
